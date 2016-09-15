@@ -1,0 +1,31 @@
+ body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .search-bar {
+  text-align: center;
+  padding: 30px;
+ }
+ .media-left img {
+  width: 150px;
+  height: 110px;
+ }
+ .video-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+ }
+ .list-group-item {
+  cursor: pointer;
+ }
+  .list-group-item:hover {
+  background-color: #eee;
+ }
+.flexed {
+  display: flex;
+}
