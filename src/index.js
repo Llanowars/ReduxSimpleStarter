@@ -15,15 +15,16 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     };
+    this.videoSearch('chicago music exchange');
+  }
 
-    YTSearch({key: API_KEY, term: 'surfoards'}, (videos) => {
+  videoSearch(term) {
+    YTSearch({key: API_KEY, term: term}, (videos) => {
       this.setState({ 
         videos: videos,
         selectedVideo: videos[0] 
       });
-      // this.setState({ videos })
-      // Lorsque clé et valeurs sont les mêmes mots on peut simplifier la syntaxe comme çi dessus
-    })
+    }); 
   }
 
   render() {
